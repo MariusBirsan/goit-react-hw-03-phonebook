@@ -43,7 +43,7 @@ export class App extends Component {
           input.number === contact.number) ||
         input.number === contact.number
     )
-      ? alert(`${name} is already in contacts`)
+      ? alert(`${name} or ${number} is already in contacts`)
       : this.setState(({ contacts }) => ({
           contacts: [contact, ...contacts],
         }));
